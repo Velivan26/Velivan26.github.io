@@ -21,6 +21,15 @@ body {
   padding: 2.5rem 1.5rem;
 }
 
+.highlight {
+  color: var(--color-highlight);
+  letter-spacing: 0.1rem;
+}
+
+.margin {
+  margin-bottom: 2rem;
+}
+
 /* ----- header ------- */
 
 header {
@@ -67,15 +76,6 @@ main {
   padding-top: 6rem;
 }
 
-main h4 {
-  color: var(--color-highlight);
-  margin-bottom: 2rem;
-}
-
-.sticky {
-  position: sticky;
-}
-
 .about-txt {
   line-height: 1.75;
   margin-bottom: 1rem;
@@ -91,5 +91,73 @@ main h4 {
 }
 
 main section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
   margin-bottom: 4rem;
+}
+
+.thumbnail {
+  display: none;
+}
+
+.card-header {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: rgb(100 116 139);
+  opacity: 1;
+}
+
+.card-txt {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-txt p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.tech-used {
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tech-used li {
+  background-color: rgba(45, 212, 191, 0.1);
+  color: rgb(94 234 212);
+  padding: 0.5rem 0.75rem;
+  border-radius: 100px;
+}
+
+.project-i {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-i img {
+  border-radius: 2.5px;
+  border: 2px solid rgba(226, 232, 240, 0.1);
+  width: 200px;
+  aspect-ratio: auto 200 / 48;
+}
+
+.project-ls {
+  display: grid;
+  gap: 3.5rem;
+}
+
+/* ----- footer -------*/
+
+footer {
+  max-width: 450px;
+  margin-bottom: 4rem;
+}
+
+footer p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  opacity: 0.5;
 }
